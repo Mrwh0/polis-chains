@@ -86,6 +86,7 @@
       //increase validator list up to 4
       //change signature schema to 3 of 4
       "HomeOmnibridge": "0x0306BcA3Ea988112acf420aA58EBAbA40040A1Fd",
+      //token suffix 'on Polis'
       "OmnibridgeFeeManager":"0x9F16ad287b59c6B220F970F0a49e47Cb0AB05BDd",
       "SelectorTokenGasLimitManager":"0x9bC6Db4152F698D6468Bc966512f4c4A8D7Ca3fD",
       //verify
@@ -93,7 +94,7 @@
       "TokenImage": "0xBa70feC214Ea7e5c631C9368110300Ea22018a44",
       "forwardingRulesManager": "0x0000000000000000000000000000000000000000",
       "Wrapped Matic on Polis":"0xD045aC01FFB46d42ba923b9E7866F5e3519e6723"
-      "multisignature": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
+      "multisig": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
     },
     "FOREIGN": {
       "ForeignAMB": "0x5F05B526a5226A8270b078c3569EEb4e95a66a28",
@@ -101,6 +102,7 @@
       //increase validator list up to 4
       //change signature schema to 3 of 4
       "ForeignOmnibridge": "0xDA4Afcd8c7305AbedEb676768b04D29412d60eFB",
+      //token sufix 'on Polygon'
       "TokenFactory": "0xA05924CBd2A8434b3993394b9BEd122583A783AD",
       //verify
       "TokenImage": "",
@@ -108,6 +110,7 @@
       "WETHOmnibridgeRouter":"0x594e8e761c509101decd0953dbfebd2f73cb075a",
       //verify
       "Wrapped Matic on Polygon":"",
+      //read from WETHOmnibridgeRouter state
       "SoulToken on Polygon":"0x7cc8711922029165af30232bca282e8ff3ff1bb3",
       //verify
       "multisig":"0xF2ac6018122fA9562fADfC11348d46138dF0980D",
@@ -116,27 +119,39 @@
   },
   "fantom": {
     "HOME": {
-      "MEDIATOR": "0x26f898A29CD9Ea4c327037547DF6FA7E2967b8D6",
-      "AMB":"0x9411446287A9DE0Fc02B8bB0201E3d401d7615F4",
-      "FEE MANAGER":"0xc34BC72aB604D031826f7FF31622AF6E9d5078Ca",
-      "GAS MANAGER":"0x8463c64535E47fd4dDE3CfAfB9a445ef1ebd97A3",
-      "OWNER": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
-      "TOKEN FACTORY": "0x6a4810341a2fe1d6d30A6611811C25f6ffb48b79",
-      "ADMIN":"0x591f950C92976d86C2C487c3299871E9B83b5c7C",
-      "VALIDATOR":"0x28E10E6768a988eE5D45d1aC514e82cDFFbd3a3b",
-      "WTOKEN":"0x03C7A86e14e9BC71d84A4DBe6352b1561402e29C"
+      "HomeAMB":"0x9411446287A9DE0Fc02B8bB0201E3d401d7615F4",
+      "BridgeValidators":"0x28E10E6768a988eE5D45d1aC514e82cDFFbd3a3b",
+      //increase validator list up to 4
+      //change signature schema to 3 of 4
+      "HomeOmnibridge": "0x26f898A29CD9Ea4c327037547DF6FA7E2967b8D6",
+      //token suffix 'on Polis'
+      "OmnibridgeFeeManager":"0xc34BC72aB604D031826f7FF31622AF6E9d5078Ca",
+      "SelectorTokenGasLimitManager":"0x8463c64535E47fd4dDE3CfAfB9a445ef1ebd97A3",
+      "TokenFactory": "0x6a4810341a2fe1d6d30A6611811C25f6ffb48b79",
+      "TokenImage":"0x0488411d2171Ec80A1715e5555A278f23F333c0E",
+      "forwardingRulesManager": "0x0000000000000000000000000000000000000000",
+      "Wrapped Fantom on Polis":"0x03C7A86e14e9BC71d84A4DBe6352b1561402e29C",
+      "multisig": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
 
     },
     "FOREIGN": {
-      "MEDIATOR": "0xf4Ce1C6d4eF79d5661AfAA6678892446822Cb558",
-      "AMB": "0xF34029CD8A376f30d65Bf8f71C3bBFA01Fab91a3",
-      "OWNER":"0x3F7489DA41180a928B6F963C942AEB735d522FAb",
-      "TOKEN FACTORY": "0xAeC4eF745a91C22C981DD0ca0aDe66eA0ca72fA2",
-      "ADMIN": "0x3F7489DA41180a928B6F963C942AEB735d522FAb",
-      "VALIDATOR":"0xe82D239b2d51ebc0C9E339723027ec262acaFddf",
+      "ForeignAMB": "0xF34029CD8A376f30d65Bf8f71C3bBFA01Fab91a3",
+      "BridgeValidators":"0xe82D239b2d51ebc0C9E339723027ec262acaFddf",
+      //increase validator list up to 4
+      //change signature schema to 3 of 4
+      "ForeignOmnibridge": "0xf4Ce1C6d4eF79d5661AfAA6678892446822Cb558",
+      //token suffix ' on Fantom'
+      "TokenFactory": "0xAeC4eF745a91C22C981DD0ca0aDe66eA0ca72fA2",
+      //verify
+      "TokenImage": "",
+      //read from TokenFactory state
       "WETHOmnibridgeRouter":"0xB771bA1483Eb9aC628a7E81af060Aed52cE74A53",
+      //verify
+      "Wrapped FTM on Fantom":"",
+      //read from WETHOmnibridgeRouter state
       "SoulToken on Fantom":"0xC8CC8371e0b0e02f53d6F96eA35f0a9A627c16E0",
-      //handle verification bug, tokens created by tokenfactory, verification
+      //verify
+      "multisig":"0x3F7489DA41180a928B6F963C942AEB735d522FAb",
       "explorer":"https://ftmscan.com/"
 
     }
