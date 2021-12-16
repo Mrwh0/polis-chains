@@ -1,28 +1,43 @@
 {
   "ethereum": {
     "HOME": {
-      "MEDIATOR": "0x96ba6eFcF8c12547fd4a069370602904D50e4d34",
-      "AMB":"0x651581b964A22bCE9eAfCE0a762189d2D04cAe6a",
-      "FEE MANAGER":"0x782Bf80668D9bb1d951D3529DC24c407Df0ca253",
-      "GAS MANAGER":"0x10d1d0d13983451b56F15088DE214CdfF326Aa0C",
-      "OWNER": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
-      "TOKEN FACTORY": "0x8d6F5b22cb2e7869BA65Bc1CE2d57b3DEDB3444C",
-      "ADMIN":"0x591f950C92976d86C2C487c3299871E9B83b5c7C",
-      "VALIDATOR":"0x6490A8DAaB5dEbAd9695A2293aBE710e20B4F2A9",
-      "WTOKEN":"0x5B5B05D93c7e374a6D223BFA9591281fbf48237F"
-
-
+      "HomeAMB":"0x651581b964A22bCE9eAfCE0a762189d2D04cAe6a",
+      "BridgeValidators":"0x6490A8DAaB5dEbAd9695A2293aBE710e20B4F2A9",
+      //increase validator list up to 4
+      //change signature schema to 3 of 4
+      "HomeOmnibridge": "0x96ba6eFcF8c12547fd4a069370602904D50e4d34",
+      //on contract token suffix is "on Polis" while "Wrapped ETH from Mainnet":"0x5B5B05D93c7e374a6D223BFA9591281fbf48237F"
+      //standarize the token suffix by changing the HomeOmnibridge or using a new WETH on polis
+      "OmnibridgeFeeManager":"0x782Bf80668D9bb1d951D3529DC24c407Df0ca253",
+      //change reward address 0xeD86b5962a1a73aFad7181f0B3e427A93Ce8E552 to multisig
+      "SelectorTokenGasLimitManager":"0x10d1d0d13983451b56F15088DE214CdfF326Aa0C",
+      //verify
+      "TokenFactory": "0x8d6F5b22cb2e7869BA65Bc1CE2d57b3DEDB3444C",
+      "TokenImage": "0x44E4d1b5aE6a6EAFb4f7EEc27719a1385fbcBC56",
+      "forwardingRulesManager": "0x0000000000000000000000000000000000000000",
+      "Wrapped ETH from Mainnet":"0x5B5B05D93c7e374a6D223BFA9591281fbf48237F"
+      //check HomeOmnibridge note must be "Wrapped ETH on Polis"
+      //transfer ownershipt to HomeOmnibridge
+      "multisig": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
     },
     "FOREIGN": {
-      "MEDIATOR": "0x4f7488D150eA5295d20c8f0E3524b7897b1b7021",
-      "AMB": "0x5172747f21EE6D4065CE9a36691D3b579bfCDf20",
-      "OWNER":"0x5370f073325Bf93ED8Cc363725Fdc6b867A13543",
-      "TOKEN FACTORY": "0x383DA52590880e5b7d20b849103a53554A760c76",
-      "ADMIN": "0x5370f073325Bf93ED8Cc363725Fdc6b867A13543",
-      "VALIDATOR": "0xD260a4689B4310A8bc594d7A2193F4e34DAC9e8b",
+      "ForeignAMB": "0x5172747f21EE6D4065CE9a36691D3b579bfCDf20",
+      "BridgeValidators": "0xD260a4689B4310A8bc594d7A2193F4e34DAC9e8b",
+      //increase validator list up to 4
+      //change signature schema to 3 of 4
+      "ForeignOmnibridge": "0x4f7488D150eA5295d20c8f0E3524b7897b1b7021",
+      //token sufix ' on Mainnet'
+      "TokenFactory": "0x383DA52590880e5b7d20b849103a53554A760c76",
+      //verify
+      "TokenImage":"",
+      //read from TokenFactory state
       "WETHOmnibridgeRouter":"0xa05924cbd2a8434b3993394b9bed122583a783ad",
+      //verify
+      "Wrapped ETH on Mainnet":"",
+      //read from WETHOmnibridgeRouter state
       "SoulToken on Mainnet":"0xd958d021622283b9179e754332f58bdb8ce8a356"
       //verify
+      "multisig":"0x5370f073325Bf93ED8Cc363725Fdc6b867A13543",
       "exporer":"https://etherscan.io/"
     }
 
@@ -77,12 +92,13 @@
       "TokenFactory": "0xA05924CBd2A8434b3993394b9BEd122583A783AD",
       //verify
       "TokenImage": "",
+      //read from TokenFactory state
       "WETHOmnibridgeRouter":"0x594e8e761c509101decd0953dbfebd2f73cb075a",
       //verify
-      "WMATIC":"",
+      "Wrapped Matic on Polygon":"",
       "SoulToken on Polygon":"0x7cc8711922029165af30232bca282e8ff3ff1bb3",
       //verify
-      "multisignature":"0xF2ac6018122fA9562fADfC11348d46138dF0980D",
+      "multisig":"0xF2ac6018122fA9562fADfC11348d46138dF0980D",
       "explorer":"https://polygonscan.com/"
     }
   },
@@ -124,7 +140,8 @@
       "TokenImage": "0xed20F1186D1b3046F72c7EAc93E8302Ac2756484",
       "forwardingRulesManager": "0x0000000000000000000000000000000000000000",
       "Wrapped Avax on Polis":"0x3126cadD2d364612E49B4c7779116037EF9fCe91"
-      "multisignature": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
+      //transfer ownership to HomeOmnibridge
+      "multisig": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
     },
     "FOREIGN": {
       "ForeignAMB": "0xd66650Db783296918d11EdaE2FA6F191e9F7f884",
@@ -133,7 +150,7 @@
       "TokenFactory": "0xC226D3655648d7BF486110B78A5dBbA8E8663a9c"
       "TokenImage": "0xed20F1186D1b3046F72c7EAc93E8302Ac2756484",
       "WETHOmnibridgeRouter":"0x37475F044DE2437fC60F664d85AE0232d00695D1",
-      "WAVAX":"0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+      "Wrapped Avax on Avalanche":"0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
       "SoulToken on Avalanche":"0x3126cadD2d364612E49B4c7779116037EF9fCe91",
       //handle verification bug, tokens created by tokenfactory, verification
       "multisignature": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
