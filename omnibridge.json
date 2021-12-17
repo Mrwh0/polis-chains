@@ -161,28 +161,29 @@
       "HomeAMB":"0xd66650Db783296918d11EdaE2FA6F191e9F7f884",
       "BridgeValidators":"0x777315Ab2F65d80620e4EeA798399Fb0E64756e3",
       "HomeOmnibridge": "0xfB59876201405Aee8D8aDa645b168AFEdb442F76",
+      //0.5 min transaction is too much, reduce to 0.05 ?
       "OmnibridgeFeeManager":"0x28e21F0b7Ac09A43aff9F383972B326Bf27f418F",
       "SelectorTokenGasLimitManager":"0x130FcBBC35E96FfE43053574B7e7FfD186904173",
       "TokenFactory": "0xC226D3655648d7BF486110B78A5dBbA8E8663a9c",
       "TokenImage": "0xed20F1186D1b3046F72c7EAc93E8302Ac2756484",
       "forwardingRulesManager": "0x0000000000000000000000000000000000000000",
       "Wrapped Avax on Polis":"0x3126cadD2d364612E49B4c7779116037EF9fCe91"
-      //transfer ownership to HomeOmnibridge
       "multisig": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
     },
     "FOREIGN": {
       "ForeignAMB": "0xd66650Db783296918d11EdaE2FA6F191e9F7f884",
       "BridgeValidators":"0x777315Ab2F65d80620e4EeA798399Fb0E64756e3",
       "ForeignOmnibridge": "0xfB59876201405Aee8D8aDa645b168AFEdb442F76",
+      //0.5 min transaction is too much, reduce to 0.05 ?
       "TokenFactory": "0xC226D3655648d7BF486110B78A5dBbA8E8663a9c"
       "TokenImage": "0xed20F1186D1b3046F72c7EAc93E8302Ac2756484",
       "WETHOmnibridgeRouter":"0x37475F044DE2437fC60F664d85AE0232d00695D1",
+      //test eval/run test
       "Wrapped Avax on Avalanche":"0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
-      "SoulToken on Avalanche":"0x3126cadD2d364612E49B4c7779116037EF9fCe91",
-      //handle verification bug, tokens created by tokenfactory, verification
-      //transfer ownership to HomeOmnibridge
+      "Wrapped Polis on Avalanche":"0xFd1F5A15436679cA1c13Bbc515819E4BbD86C5da",
+      "SoulToken on Avalanche":"0x8af201118c7f06ca3225fbd8e166f54d3fa5ff93",
       "multisig": "0x591f950C92976d86C2C487c3299871E9B83b5c7C",
-      //deploy gnosis multiig on avalanche
+      //deploy gnosis multisig on avalanche
       "explorer": "https://snowtrace.io/"
     }
   },
